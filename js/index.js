@@ -166,29 +166,6 @@ $(document).ready(function(){
     projectsDiv.append(project);
   });
 
-  // Send contact email to myself when user sends email
-  function sendEmail(name, body) {
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username: "robertocardenasportfolio@gmail.com",
-      Password: "L7QAa9GK5Jkij2d",
-      To: 'robertocardenas@berkeley.edu',
-      From: "robertocardenasportfolio@gmail.com",
-      Subject: "Portfolio contact from " + name,
-      Body: body,
-    }).then(
-      () => $('#contact-form')[0].reset()
-    );
-  }
-
-  $('#contact-form').submit((e) => {
-    e.preventDefault();
-
-    var body = `${$('#contact-form #textarea1').val()}   ${$('#contact-form #email').val()}`;
-
-    sendEmail($('#contact-form #name').val(), body);
-  });
-
   // Handle navigation active tab
   function setActiveTab(current) {
     var tabs = $('.tab');
@@ -211,24 +188,24 @@ $(document).ready(function(){
   $.each($('.sidenav-tab'), (_, tab) => $(tab).click(() => setActiveSidenavTab(tab)));
 
   // Set the active tab on scroll
-  // $(window).on('scroll', function() {
-  //     var y_scroll_pos = window.pageYOffset;
-  //     var projectsPos = $('#projects').offset().top;
-  //     var contactPos = $('#contact').offset().top;
+  $(window).on('scroll', function() {
+      var y_scroll_pos = window.pageYOffset;
+      var projectsPos = $('#projects').offset().top;
+      var contactPos = $('#contact').offset().top;
 
-  //     // Projects
-  //     if(y_scroll_pos >= projectsPos && y_scroll_pos < contactPos) {
-  //       setActiveTab($('.tab')[1]);
-  //       setActiveSidenavTab($('.sidenav-tab')[1]);
-  //     // Contact
-  //     } else if (y_scroll_pos >= contactPos) {
-  //       setActiveTab($('.tab')[2]);
-  //       setActiveSidenavTab($('.sidenav-tab')[2]);
-  //     // About me
-  //     } else {
-  //       setActiveTab($('.tab')[0]);
-  //       setActiveSidenavTab($('.sidenav-tab')[0]);
-  //     }
-  // });
+      // Projects
+      if(y_scroll_pos >= projectsPos && y_scroll_pos < contactPos) {
+        setActiveTab($('.tab')[1]);
+        setActiveSidenavTab($('.sidenav-tab')[1]);
+      // Contact
+      } else if (y_scroll_pos >= contactPos) {
+        setActiveTab($('.tab')[2]);
+        setActiveSidenavTab($('.sidenav-tab')[2]);
+      // About me
+      } else {
+        setActiveTab($('.tab')[0]);
+        setActiveSidenavTab($('.sidenav-tab')[0]);
+      }
+  });
 });
 
