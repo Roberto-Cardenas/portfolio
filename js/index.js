@@ -33,7 +33,7 @@ $(document).ready(function(){
       {
         name: 'SCMI',
         shortDescription: 'Web Based Self-Service Store Monitoring System',
-        description: 'SCMI is an online system providing users with the ability to monitor and control the temperature, humidity, and status of fridges and other components in self-service stores.',
+        description: `SCMI is an online system providing managers and employees with the ability to monitor and control the temperature, humidity, and status of fridges and other components in self-service stores. This project was developed during my time working at Motus Guadalajara in collaboration with RYCSA and ThermoStar. My responsibilities for this project included designing and building the user interface, and designing and building the database and API utilized by the client. Other responsibilities included maintaining constant commmunication and collaboration with the Electrical Engineering team that was in charge of installing the sensors necessary for data collection.`,
         mainPicture: 'media/scmi-main-img.jpg',
         projectLink: null,
         pictures: [
@@ -51,7 +51,7 @@ $(document).ready(function(){
       {
         name: 'Restofácil',
         shortDescription: 'Browser Based Restaurant Management Software',
-        description: 'Restofácil is a system built to provide service industry staff with an easy and fast way of managing tables, orders, and customers.',
+        description: 'Restofácil is a system built to provide service industry staff with an easy and fast way of managing tables, orders, and customers. This project was developed during my time as a developer at Motus Guadajalara. My responsibilities for this project included designing and building the user interface as well as designing and building the API it consumed information from.',
         mainPicture: 'media/restofacil-main.jpg',
         projectLink: null,
         pictures: [
@@ -69,8 +69,8 @@ $(document).ready(function(){
       },
       {
         name: 'Waste Website',
-        shortDescription: 'Waste Information Website for Casa Zimbabwe',
-        description: 'This website provides residents of CZ with all the information they need in order to sort waste correctly in their cooperative. It is color coded to represent the corresponding bins.',
+        shortDescription: 'Waste Information Website for the Casa Zimbabwe Student Cooperative',
+        description: 'This website provides residents of CZ with all the information they need in order to sort waste correctly in their cooperative. Each panel is color coded to represent the corresponding waste bins. This was an independent project I developed during my time as Waste Reduction Manager at the cooperative and I mostly used it as a way to practice developing with REACT.',
         mainPicture: 'media/waste-main.jpg',
         projectLink: null,
         pictures: [
@@ -86,7 +86,7 @@ $(document).ready(function(){
       {
         name: 'Waste Website Admin',
         shortDescription: 'Administrator Website for Casa Zimbabwe\'s Waste Website',
-        description: 'This tool was made for the Waste Reduction Manager so they can easily modify and update the main Waste Website',
+        description: 'This tool was made for the Waste Reduction Manager so they can easily modify and update the main Waste Website. This project is a little bit more involved than the Waste Website itself, the Waste Reduction Manager can easily and intuitively add, remove and edit panels and their positioning on the page as well as change the current login credentials.',
         mainPicture: 'media/waste-admin-main.jpg',
         projectLink: null,
         pictures: [
