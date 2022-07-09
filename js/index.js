@@ -78,9 +78,9 @@ $(document).ready(function(){
           'media/waste-expand-panel.jpg'
         ],
         languages: [
-          'media/react.svg',
-          'media/javascript.svg',
-          'media/php.png'
+          'media/html.svg',
+          'media/css.svg',
+          'media/react.svg'
         ]
       },
       {
@@ -95,8 +95,21 @@ $(document).ready(function(){
           'media/waste-admin-add-panel.jpg'
         ],
         languages: [
-          'media/react.svg',
-          'media/javascript.svg',
+          'media/html.svg',
+          'media/css.svg',
+          'media/react.svg'
+        ]
+      },
+      {
+        name: 'Waste Website REST API',
+        shortDescription: 'REST API for Casa Zimbabwe\'s Waste Information Website',
+        description: 'Simple REST API that serves as the backend for both the Waste Websites user facing client and the admin facing client. The API itself is written in PHP and the data is stored in JSON files.',
+        mainPicture: 'media/waste-admin-main.jpg',
+        projectLink: 'https://github.com/Roberto-Cardenas/cz-waste-api',
+        pictures: [
+          'media/waste-admin-main.jpg'
+        ],
+        languages: [
           'media/php.png'
         ]
       }
