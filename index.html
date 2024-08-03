@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roberto Cárdenas Web Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;500;600;700&family=Bungee&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script src="js/nav.js" defer></script>
+  <script src="js/observers.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="#hero" class="logo">Roberto Cardenas <span>Web Portfolio</span></a>
+    <nav>     
+      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+        <li class="active btn home-tab"><a href="./index.html#hero">Home</a></li>
+        <li class="about-tab btn"><a href="./index.html#about">About</a></li>
+        <li class="projects-tab btn"><a href="./index.html#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" aria-controls="primary-navigation" aria-expanded="false" ><span class="sr-only">Menu</span></button>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" data-section="home-tab" class="hero">
+    <div class="hero-panel flex">
+      <div class="container flow-content wrapper">
+        <h1 class="greeting">Hello!</h1>
+        <h1 class="heading">My name is Roberto Cardenas.</h1>
+        <p class="subheading">I am a food service industry professional looking to restart my career as a developer. I have 2 years of professional experience as a Full Stack Developer and I am extremely passionate about websites and code that are beautifully designed and executed.</p>
+      </div>
+    </div>
+    <a href="#about" class="about-panel btn-panel">
+      <span class="sr-only">About link</span>
+      <img src="images/aboutSplash.webp" alt="">
+    </a>
+    <a href="#projects" class="projects-panel btn-panel">
+      <span class="sr-only">Projects link</span>
+      <img src="images/izzy-davies-desktop.webp" alt="">
+    </a>
+  </section>
+
+  <section id="about" data-section="about-tab" class="about wrapper">
+    <div class="about-image"></div>
+    <div class="about-content flex">
+      <div class="flow-content about-container">
+        <h2>About Me</h2>
+        <div class="profile flow-content">
+            <p>I am a UC Berkeley Computer Science graduate with two years of professional experience working as a full stack developer.</p>
+            <p>As a developer, I am mostly interested in web development, design, and accessibility. I believe the spirit of the internet is that it is a space made for everybody to enjoy and I think our online spaces should reflect that by paying attention to accessibility for all people.</p>
+            <p>I am currently following my other passion working as a Sous Chef at a bay area brewery in Oakland, California, a job I am extremely proud of, but am looking to restart my career as developer.</p>
+            <p>Fun facts about me: decent cook, love reading manga, ok at crocheting.</p>
+       </div>
+        <div class="skills flow-content">
+          <h2>Skills and Tools</h2>
+          <div class="skills-container flex">
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/html.svg" alt="HTML">
+              <p>HTML</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/css.svg" alt="CSS">
+              <p>CSS</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/sass.svg" alt="Sass">
+              <p>Sass</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/js.svg" alt="JavaScript">
+              <p>JavaScript</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/jquery.svg" alt="JQuery">
+              <p>JQuery</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/php.svg" alt="PHP">
+              <p>PHP</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/python.svg" alt="Python">
+              <p>Python</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/ruby.svg" alt="Ruby">
+              <p>Ruby</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/mysql.svg" alt="MySQL">
+              <p>MySQL</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/wordpress.svg" alt="Wordpress">
+              <p>Wordpress</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/flask.svg" alt="Flask">
+              <p>Flask</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/rails.svg" alt="Rails">
+              <p>Rails</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/reactjs.svg" alt="ReactJS">
+              <p>ReactJS</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/figma.svg" alt="Figma">
+              <p>Figma</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/git.svg" alt="Git">
+              <p>Git</p>
+            </div>
+            <div class="skill flex">
+              <img class="skill-icon" src="icons/github.svg" alt="Github">
+              <p>Github</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="links flex">
+        <a href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Roberto-Cardenas" target="_blank">Github</a>
+        <a href="./assets/Roberto Cardenas Resume.pdf" target="_blank">Resume</a>
+        <p>robertocardenas@berkeley.edu</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" data-section="projects-tab" class="projects">
+    <div class="projects-header flex">
+      <h2 class="header-title">Projects</h2>
+    </div>
+    <div class="projects-container">
+      <div class="project large first" style="--project-bg: url(../images/izzy-davies-desktop.webp)">
+        <div class="project-content flex">
+          <h4 class="project-title">Izzy Davies Design</h4>
+          <a class="project-link" href="./izzy-davies.html" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="project" style="--project-bg: url(../images/fogon-desktop.webp)">
+        <div class="project-content flex">
+          <h4 class="project-title">El Fogon de mi Ma. Maria</h4>
+          <a class="project-link" href="./fogon-de-mi-ma-maria.html" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="project" style="--project-bg: url(../images/restofacilSplash.webp)">
+        <div class="project-content flex">
+          <h4 class="project-title">Restofacil</h4>
+          <a class="project-link" href="./restofacil.html" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="project medium" style="--project-bg: url(../images/scmiSplash.webp)">
+        <div class="project-content flex">
+          <h4 class="project-title">SCMI</h4>
+          <a class="project-link" href="./scmi.html" class="btn">Learn More</a>
+        </div>
+      </div>
+      <div class="project large" style="--project-bg: url(../images/menuWeeklyMenu.webp)">
+        <div class="project-content flex">
+          <h4 class="project-title">CZ Weekly Dinner Menu</h4>
+          <a class="project-link" href="./cz-weekly-menu.html" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="github-header">
+      <div class="github-header-container flow-content">
+        <h3 class="title">Looking for more of my work?</h3>
+        <a class="link" href="https://github.com/Roberto-Cardenas?tab=repositories" target="_blank">Checkout my Github</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Roberto Cardenas 2023</p>
+  </footer>
+</body>
+</html>
