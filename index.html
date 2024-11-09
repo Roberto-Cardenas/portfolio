@@ -1,188 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roberto Cárdenas Web Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;500;600;700&family=Bungee&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/home.css">
-  <script src="js/nav.js" defer></script>
-  <script src="js/observers.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberto Cárdenas Web Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css" integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/nav.js" defer></script>
+    <script src="js/observers.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400;500;600;700&family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <a href="#hero" class="logo">Roberto Cardenas <span>Web Portfolio</span></a>
-    <nav>     
-      <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-        <li class="active btn home-tab"><a href="./index.html#hero">Home</a></li>
-        <li class="about-tab btn"><a href="./index.html#about">About</a></li>
-        <li class="projects-tab btn"><a href="./index.html#projects">Projects</a></li>
-      </ul>
-    </nav>
-    <button class="menu-btn" aria-controls="primary-navigation" aria-expanded="false" ><span class="sr-only">Menu</span></button>
-  </header>
+    <!-- Header -->
+    <header>
+        <a href="#hero" class="logo">Roberto Cardenas <span>Web Portfolio</span></a>
+        <nav>     
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li class="active btn home-tab"><a href="./index.html#hero">Home</a></li>
+            <li class="about-tab btn"><a href="./index.html#about">About</a></li>
+            <li class="projects-tab btn"><a href="./index.html#projects">Projects</a></li>
+        </ul>
+        </nav>
+        <button class="menu-btn" aria-controls="primary-navigation" aria-expanded="false" ><span class="sr-only">Menu</span></button>
+    </header>
 
-  <!-- Hero -->
-  <section id="hero" data-section="home-tab" class="hero">
-    <div class="hero-panel flex">
-      <div class="container flow-content wrapper">
-        <h1 class="greeting">Hello!</h1>
-        <h1 class="heading">My name is Roberto Cardenas.</h1>
-        <p class="subheading">I am a food service industry professional looking to restart my career as a developer. I have 2 years of professional experience as a Full Stack Developer and I am extremely passionate about websites and code that are beautifully designed and executed.</p>
-      </div>
-    </div>
-    <a href="#about" class="about-panel btn-panel">
-      <span class="sr-only">About link</span>
-      <img src="images/aboutSplash.webp" alt="">
-    </a>
-    <a href="#projects" class="projects-panel btn-panel">
-      <span class="sr-only">Projects link</span>
-      <img src="images/izzy-davies-desktop.webp" alt="">
-    </a>
-  </section>
+    <!-- Hero -->
+    <section id="hero" data-section="home-tab" class="hero">
+        <div class="hero-content flow-content">
+            <h1>Roberto Cardenas</h1>
+            <p>Full Stack Developer. I enjoy building useful things for the web and am always curious about learning more about my craft.</p>
+            <div class="div flex">
+                <div class="btn"><a href="#about">About</a></div>
+                <div class="btn"><a href="#projects">Projects</a></div>
+            </div>
+            <div class="links flex">
+                <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank">LinkedIn</a>
+                <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank">Github</a>
+                <a class="link" href="./assets/Roberto Cardenas Resume.pdf" target="_blank">Resume</a>
+                <p>robertocardenas@berkeley.edu</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="about" data-section="about-tab" class="about wrapper">
-    <div class="about-image"></div>
-    <div class="about-content flex">
-      <div class="flow-content about-container">
-        <h2>About Me</h2>
-        <div class="profile flow-content">
-            <p>I am a UC Berkeley Computer Science graduate with two years of professional experience working as a full stack developer.</p>
-            <p>As a developer, I am mostly interested in web development, design, and accessibility. I believe the spirit of the internet is that it is a space made for everybody to enjoy and I think our online spaces should reflect that by paying attention to accessibility for all people.</p>
-            <p>Fun facts about me: decent cook, love reading manga, ok at crocheting.</p>
-       </div>
-        <div class="skills flow-content">
-          <h2>Skills and Tools</h2>
-          <div class="skills-container flex">
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/html.svg" alt="HTML">
-              <p>HTML</p>
+    <section id="about" data-section="about-tab" class="about">
+        <div class="about-content flow-content">
+            <h1 class="about-header-decoration">About</h1>
+            <div class="paragraphs flow-content">
+                <p>I knew I wanted to be a programmer ever since I was in elementary school. I didn't exactly have a good reason for it beyond the fact that my favorite period was the computer lab and I really loved playing Quake Arena when I finished doing my Excel spreadsheet exercises. Later on in high school, after expressing my interest in the topic, my professor lent me a copy of a C book and even though I didn't understand it fully at the time it set me on the path that I am on today. Fast-forward to now, I have had the privilege to work on a variety of projects both as a professional Full Stack Developer at a small web agency and as a Computer Science student at the University of California Berkeley. </p>
+                <p>As a developer I tend to lean towards the idea that you can always learn more and be better at your craft. In college I entertained the idea of doing freelance work so I took the time to teach myself how to build custom WordPress themes, web design and web accessibility, when working as a Full Stack developer I took it upon myself to learn proper database design and took the lead on building the main relational database for one of our projects. I am extremely curious and strive to make myself useful for whatever project I might be a part of.</p>
+                <p>In my free time, I enjoy reading my weekly manga and cooking for myself and my housemates. Cooking is actually a big passion of mine, I spent around a year exploring the possibility of pursuing it professionally even rising to the rank of Sous Chef at the kitchen I worked at. </p>
             </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/css.svg" alt="CSS">
-              <p>CSS</p>
+            <div class="skills-section flow-content">
+                <h3>Skills and Tools</h3>
+                <div class="skills-content flex">
+                    <img class="skill-icon" src="icons/html.svg" alt="HTML">
+                    <img class="skill-icon" src="icons/css.svg" alt="CSS">
+                    <img class="skill-icon" src="icons/sass.svg" alt="Sass">
+                    <img class="skill-icon" src="icons/tailwind.svg" alt="Tailwind">
+                    <img class="skill-icon" src="icons/reactjs.svg" alt="React">
+                    <img class="skill-icon" src="icons/expo.svg" alt="Expo">
+                    <img class="skill-icon" src="icons/js.svg" alt="JavaScript">
+                    <img class="skill-icon" src="icons/typescript.svg" alt="TypeScript">
+                    <img class="skill-icon" src="icons/php.svg" alt="PHP">
+                    <img class="skill-icon" src="icons/python.svg" alt="Python">
+                    <img class="skill-icon" src="icons/ruby.svg" alt="Ruby">
+                    <img class="skill-icon" src="icons/rails.svg" alt="Rails">
+                    <img class="skill-icon" src="icons/mysql.svg" alt="MySQL">
+                </div>
             </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/sass.svg" alt="Sass">
-              <p>Sass</p>
+            <div class="headshot-section flex">
+                <img class="headshot" src="images/aboutSplash.webp" alt="Picture of Roberto Cardenas">
             </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/js.svg" alt="JavaScript">
-              <p>JavaScript</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/jquery.svg" alt="JQuery">
-              <p>JQuery</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/php.svg" alt="PHP">
-              <p>PHP</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/python.svg" alt="Python">
-              <p>Python</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/ruby.svg" alt="Ruby">
-              <p>Ruby</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/mysql.svg" alt="MySQL">
-              <p>MySQL</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/wordpress.svg" alt="Wordpress">
-              <p>Wordpress</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/flask.svg" alt="Flask">
-              <p>Flask</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/rails.svg" alt="Rails">
-              <p>Rails</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/reactjs.svg" alt="ReactJS">
-              <p>ReactJS</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/figma.svg" alt="Figma">
-              <p>Figma</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/git.svg" alt="Git">
-              <p>Git</p>
-            </div>
-            <div class="skill flex">
-              <img class="skill-icon" src="icons/github.svg" alt="Github">
-              <p>Github</p>
-            </div>
-          </div>
+            <hr style="--color: #CFCACA;">
         </div>
-      </div>
-      
-      <div class="links flex">
-        <a href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/Roberto-Cardenas" target="_blank">Github</a>
-        <a href="./assets/Roberto Cardenas Resume.pdf" target="_blank">Resume</a>
-        <p>robertocardenas@berkeley.edu</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects" data-section="projects-tab" class="projects">
-    <div class="projects-header flex">
-      <h2 class="header-title">Projects</h2>
-    </div>
-    <div class="projects-container">
-      <div class="project large first" style="--project-bg: url(../images/izzy-davies-desktop.webp)">
-        <div class="project-content flex">
-          <h4 class="project-title">Izzy Davies Design</h4>
-          <a class="project-link" href="./izzy-davies.html" class="btn">Learn More</a>
+    <section id="projects" data-section="projects-tab" class="projects">
+        <div class="projects-section flow-content">
+            <h1 class="projects-header-decoration">Projects</h1>
+              <div class="projects-content">
+                <div class="project flow-content">
+                  <h3 class="project-name"><a class="link" href="./ticketdex.html">Ticketdex</a></h3>
+                  <p class="project-description">IOS app built in React Native Expo. Ticketdex is a virtual wallet that stores your tickets for shows and events.</p>
+                  <div class="project-skills flex">
+                      <img class="skill-icon" src="icons/reactjs-projects.svg" alt="React Native">
+                      <img class="skill-icon" src="icons/expo-projects.svg" alt="Expo">
+                      <img class="skill-icon" src="icons/typescript-projects.svg" alt="TypeScript">
+                      <img class="skill-icon" src="icons/css-projects.svg" alt="CSS">
+                      <img class="skill-icon" src="icons/sqlite-projects.svg" alt="Sqlite">
+                  </div>
+              </div>
+                <div class="project flow-content">
+                    <h3 class="project-name"><a class="link" href="./restofacil.html">Resto Fácil</a></h3>
+                    <p class="project-description">Restofácil is an online system providing service industry businesses and staff with an easy and fast way of managing tables, orders, customers, and payments. </p>
+                    <div class="project-skills flex">
+                        <img class="skill-icon" src="icons/html-projects.svg" alt="HTML">
+                        <img class="skill-icon" src="icons/css-projects.svg" alt="CSS">
+                        <img class="skill-icon" src="icons/js-projects.svg" alt="JavaScript">
+                        <img class="skill-icon" src="icons/php-projects.svg" alt="PHP">
+                        <img class="skill-icon" src="icons/mysql-projects.svg" alt="MySQL">
+                    </div>
+                </div>
+                <div class="project flow-content">
+                    <h3 class="project-name"><a class="link" href="./scmi.html">SCMI</a></h3>
+                    <p class="project-description">SCMI is an online system providing managers of self-service stores with the ability to monitor and control the temperature and states of fridges and other components in the store. </p>
+                    <div class="project-skills flex">
+                        <img class="skill-icon" src="icons/html-projects.svg" alt="HTML">
+                        <img class="skill-icon" src="icons/css-projects.svg" alt="CSS">
+                        <img class="skill-icon" src="icons/js-projects.svg" alt="JavaScript">
+                        <img class="skill-icon" src="icons/php-projects.svg" alt="PHP">
+                        <img class="skill-icon" src="icons/mysql-projects.svg" alt="MySQL">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="project" style="--project-bg: url(../images/fogon-desktop.webp)">
-        <div class="project-content flex">
-          <h4 class="project-title">El Fogon de mi Ma. Maria</h4>
-          <a class="project-link" href="./fogon-de-mi-ma-maria.html" class="btn">Learn More</a>
-        </div>
-      </div>
-      <div class="project" style="--project-bg: url(../images/restofacilSplash.webp)">
-        <div class="project-content flex">
-          <h4 class="project-title">Restofacil</h4>
-          <a class="project-link" href="./restofacil.html" class="btn">Learn More</a>
-        </div>
-      </div>
-      <div class="project medium" style="--project-bg: url(../images/scmiSplash.webp)">
-        <div class="project-content flex">
-          <h4 class="project-title">SCMI</h4>
-          <a class="project-link" href="./scmi.html" class="btn">Learn More</a>
-        </div>
-      </div>
-      <div class="project large" style="--project-bg: url(../images/menuWeeklyMenu.webp)">
-        <div class="project-content flex">
-          <h4 class="project-title">CZ Weekly Dinner Menu</h4>
-          <a class="project-link" href="./cz-weekly-menu.html" class="btn">Learn More</a>
-        </div>
-      </div>
-    </div>
+    </section>
 
-    <div class="github-header">
-      <div class="github-header-container flow-content">
-        <h3 class="title">Looking for more of my work?</h3>
-        <a class="link" href="https://github.com/Roberto-Cardenas?tab=repositories" target="_blank">Checkout my Github</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Roberto Cardenas 2024</p>
-  </footer>
+    <footer>
+        <hr style="--color: #666666;">
+        <div class="links flow-content" style="color: black;">
+            <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank">LinkedIn</a>
+            <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank">Github</a>
+            <a class="link" href="./assets/Roberto Cardenas Resume.pdf" target="_blank">Resume</a>
+            <p>Roberto Cardenas 2024</p>
+        </div>
+        
+    </footer>
 </body>
 </html>
