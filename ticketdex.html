@@ -18,11 +18,10 @@
     <header>
         <a href="./index.html#hero" class="logo">Roberto Cardenas <span>Web Portfolio</span></a>
         <nav>     
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-            <li class="home-tab btn"><a href="./index.html#hero">Home</a></li>
-            <li class="about-tab btn"><a href="./index.html#about">About</a></li>
-            <li class="active projects-tab btn"><a href="./index.html#projects">Projects</a></li>
-        </ul>
+          <div class="primary-navigation flex">
+            <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank" rel="no-referrer">LinkedIn</a>
+            <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank" rel="no-referrer">Github</a>
+          </div>
         </nav>
         <button class="menu-btn" aria-controls="primary-navigation" aria-expanded="false" ><span class="sr-only">Menu</span></button>
     </header>
@@ -32,11 +31,22 @@
         <p>November 2024</p>
         <p>Ticketdex is a simple application that allows you to store screenshots of your event tickets locally on your phone and find them easily the day of the event. It also stores important event information like the venue and the time that doors open. Built using React Native Expo. </p>
         <div class="project-skills flex">
-            <img class="skill-icon" src="icons/reactjs.svg" alt="React Native">
+          <div class="skill-container">
             <img class="skill-icon" src="icons/expo.svg" alt="Expo">
+            <span class="tooltip" data-color="dark">Expo</span>
+          </div>
+          <div class="skill-container">
+            <img class="skill-icon" src="icons/reactjs.svg" alt="ReactJS">
+            <span class="tooltip" data-color="dark">ReactJS</span>
+          </div>
+          <div class="skill-container">
             <img class="skill-icon" src="icons/typescript.svg" alt="TypeScript">
-            <img class="skill-icon" src="icons/css.svg" alt="CSS">
-            <img class="skill-icon" src="icons/sqlite.svg" alt="Sqlite">
+            <span class="tooltip" data-color="dark">TypeScript</span>
+          </div>
+          <div class="skill-container">
+            <img class="skill-icon" src="icons/sqlite.svg" alt="SQLite">
+            <span class="tooltip" data-color="dark">SQLite</span>
+          </div>
         </div>
         <div class="exxternal-links flex">
             <a class="link" href="https://ticketdex.created.app/" target="_blank">Product Website</a>
@@ -51,13 +61,15 @@
     </section>
 
     <footer>
+      <div class="footer-container">
         <hr style="--color: #666666;">
-        <div class="links flow-content" style="color: black;">
+        <div class="links flow-content">
             <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank">LinkedIn</a>
             <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank">Github</a>
             <a class="link" href="./assets/Roberto Cardenas Resume.pdf" target="_blank">Resume</a>
             <p>Roberto Cardenas 2024</p>
         </div>
+      </div>
     </footer>
 </body>
 </html>

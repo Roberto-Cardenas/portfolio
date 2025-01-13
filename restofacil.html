@@ -18,11 +18,10 @@
     <header>
         <a href="./index.html#hero" class="logo">Roberto Cardenas <span>Web Portfolio</span></a>
         <nav>     
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-            <li class="home-tab btn"><a href="./index.html#hero">Home</a></li>
-            <li class="about-tab btn"><a href="./index.html#about">About</a></li>
-            <li class="active projects-tab btn"><a href="./index.html#projects">Projects</a></li>
-        </ul>
+          <div class="primary-navigation flex">
+            <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank" rel="no-referrer">LinkedIn</a>
+            <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank" rel="no-referrer">Github</a>
+          </div>
         </nav>
         <button class="menu-btn" aria-controls="primary-navigation" aria-expanded="false" ><span class="sr-only">Menu</span></button>
     </header>
@@ -32,11 +31,18 @@
         <p>May 2019</p>
         <p>Browser based Restaurant Management Software made during my time as a Full Stack Developer for Motus Guadalajara (2018-2021). Restofácil is an online system providing service industry businesses and staff with an easy and fast way of managing tables, orders, customers, and payments. </p>
         <div class="project-skills flex">
-            <img class="skill-icon" src="icons/html.svg" alt="HTML">
-            <img class="skill-icon" src="icons/css.svg" alt="CSS">
+          <div class="skill-container">
             <img class="skill-icon" src="icons/js.svg" alt="JavaScript">
+            <span class="tooltip" data-color="dark">JavaScript</span>
+          </div>
+          <div class="skill-container">
             <img class="skill-icon" src="icons/php.svg" alt="PHP">
+            <span class="tooltip" data-color="dark">PHP</span>
+          </div>
+          <div class="skill-container">
             <img class="skill-icon" src="icons/mysql.svg" alt="MySQL">
+            <span class="tooltip" data-color="dark">MySQL</span>
+          </div>
         </div>
         <div class="exxternal-links flex">
             <a class="link" href="https://restofacil.com/" target="_blank">Product Website</a>
@@ -49,13 +55,15 @@
     </section>
 
     <footer>
+      <div class="footer-container">
         <hr style="--color: #666666;">
-        <div class="links flow-content" style="color: black;">
+        <div class="links flow-content">
             <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank">LinkedIn</a>
             <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank">Github</a>
             <a class="link" href="./assets/Roberto Cardenas Resume.pdf" target="_blank">Resume</a>
             <p>Roberto Cardenas 2024</p>
         </div>
+      </div>
     </footer>
 </body>
 </html>

@@ -18,11 +18,10 @@
     <header>
         <a href="#hero" class="logo">Roberto Cardenas <span>Web Portfolio</span></a>
         <nav>     
-        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-            <li class="active btn home-tab"><a href="./index.html#hero">Home</a></li>
-            <li class="about-tab btn"><a href="./index.html#about">About</a></li>
-            <li class="projects-tab btn"><a href="./index.html#projects">Projects</a></li>
-        </ul>
+          <div class="primary-navigation flex">
+            <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank" rel="no-referrer">LinkedIn</a>
+            <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank" rel="no-referrer">Github</a>
+          </div>
         </nav>
         <button class="menu-btn" aria-controls="primary-navigation" aria-expanded="false" ><span class="sr-only">Menu</span></button>
     </header>
@@ -34,12 +33,13 @@
             <p>Full Stack Developer. I enjoy building useful things for the web and am always curious about learning more about my craft.</p>
             <div class="div flex">
                 <div class="btn"><a href="#about">About</a></div>
+                <div class="btn"><a href="#employment">Experience</a></div>
                 <div class="btn"><a href="#projects">Projects</a></div>
             </div>
             <div class="links flex">
-                <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank">LinkedIn</a>
-                <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank">Github</a>
-                <a class="link" href="./assets/Roberto Cardenas Resume.pdf" target="_blank">Resume</a>
+                <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank" rel="no-referrer">LinkedIn</a>
+                <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank" rel="no-referrer">Github</a>
+                <a class="link" href="./assets/Roberto Cardenas Resume.pdf" target="_blank" rel="no-referrer">Resume</a>
                 <p>robertocardenas@berkeley.edu</p>
             </div>
         </div>
@@ -56,19 +56,46 @@
             <div class="skills-section flow-content">
                 <h3>Skills and Tools</h3>
                 <div class="skills-content flex">
-                    <img class="skill-icon" src="icons/html.svg" alt="HTML">
-                    <img class="skill-icon" src="icons/css.svg" alt="CSS">
-                    <img class="skill-icon" src="icons/sass.svg" alt="Sass">
-                    <img class="skill-icon" src="icons/tailwind.svg" alt="Tailwind">
-                    <img class="skill-icon" src="icons/reactjs.svg" alt="React">
-                    <img class="skill-icon" src="icons/expo.svg" alt="Expo">
-                    <img class="skill-icon" src="icons/js.svg" alt="JavaScript">
+                  <div class="skill-container">
+                    <img class="skill-icon" src="icons/reactjs.svg" alt="ReactJS">
+                    <span class="tooltip" data-color="dark">ReactJS</span>
+                  </div>
+                  <div class="skill-container">
                     <img class="skill-icon" src="icons/typescript.svg" alt="TypeScript">
+                    <span class="tooltip" data-color="dark">TypeScript</span>
+                  </div>
+                  <div class="skill-container">
                     <img class="skill-icon" src="icons/php.svg" alt="PHP">
+                    <span class="tooltip" data-color="dark">PHP</span>
+                  </div>
+                  <div class="skill-container">
                     <img class="skill-icon" src="icons/python.svg" alt="Python">
+                    <span class="tooltip" data-color="dark">Python</span>
+                  </div>
+                  <div class="skill-container">
                     <img class="skill-icon" src="icons/ruby.svg" alt="Ruby">
+                    <span class="tooltip" data-color="dark">Ruby</span>
+                  </div>
+                  <div class="skill-container">
                     <img class="skill-icon" src="icons/rails.svg" alt="Rails">
+                    <span class="tooltip" data-color="dark">Rails</span>
+                  </div>
+                  <div class="skill-container">
                     <img class="skill-icon" src="icons/mysql.svg" alt="MySQL">
+                    <span class="tooltip" data-color="dark">MySQL</span>
+                  </div>
+                  <div class="skill-container">
+                    <img class="skill-icon" src="icons/sass.svg" alt="Sass">
+                    <span class="tooltip" data-color="dark">Sass</span>
+                  </div>
+                  <div class="skill-container">
+                    <img class="skill-icon" src="icons/tailwind.svg" alt="TailwindCSS">
+                    <span class="tooltip" data-color="dark">TailwindCSS</span>
+                  </div>
+                  <div class="skill-container">
+                    <img class="skill-icon" src="icons/storybook.svg" alt="StorybookJS">
+                    <span class="tooltip" data-color="dark">StorybookJS</span>
+                  </div>
                 </div>
             </div>
             <div class="headshot-section flex">
@@ -78,56 +105,158 @@
         </div>
     </section>
 
-    <section id="projects" data-section="projects-tab" class="projects">
-        <div class="projects-section flow-content">
-            <h1 class="projects-header-decoration">Projects</h1>
-              <div class="projects-content">
-                <div class="project flow-content">
-                  <h3 class="project-name"><a class="link" href="./ticketdex.html">Ticketdex</a></h3>
-                  <p class="project-description">IOS app built in React Native Expo. Ticketdex is a virtual wallet that allows you to store your tickets for shows and events directly on your phone and keep them organized.</p>
-                  <div class="project-skills flex">
-                      <img class="skill-icon" src="icons/reactjs-projects.svg" alt="React Native">
-                      <img class="skill-icon" src="icons/expo-projects.svg" alt="Expo">
-                      <img class="skill-icon" src="icons/typescript-projects.svg" alt="TypeScript">
-                      <img class="skill-icon" src="icons/css-projects.svg" alt="CSS">
-                      <img class="skill-icon" src="icons/sqlite-projects.svg" alt="Sqlite">
-                  </div>
-              </div>
-                <div class="project flow-content">
-                    <h3 class="project-name"><a class="link" href="./restofacil.html">Resto Fácil</a></h3>
-                    <p class="project-description">Restofácil is an online system providing service industry businesses and staff with an easy and fast way of managing tables, orders, customers, and payments. </p>
-                    <div class="project-skills flex">
-                        <img class="skill-icon" src="icons/html-projects.svg" alt="HTML">
-                        <img class="skill-icon" src="icons/css-projects.svg" alt="CSS">
-                        <img class="skill-icon" src="icons/js-projects.svg" alt="JavaScript">
-                        <img class="skill-icon" src="icons/php-projects.svg" alt="PHP">
-                        <img class="skill-icon" src="icons/mysql-projects.svg" alt="MySQL">
-                    </div>
+    
+
+    <section id="employment" class="employment">
+      <div 
+        class="employment-section flow-content"
+      >
+        <h1 class="employment-header-decoration">Experience</h1>
+          <div class="employment-content">
+            <div class="employment flow-content">
+              <div class="employment-header flow-content" style="--flow: 4px;">
+                <div 
+                  class="flex flex-row items-end"
+                  style="--gap: 8px;"
+                >
+                  <h3>Front End Developer Contractor</h3>
+                  <p><a class="link" href="https://create.xyz" rel="no-referrer" target="_blank">Create</a></p>
                 </div>
-                <div class="project flow-content">
-                    <h3 class="project-name"><a class="link" href="./scmi.html">SCMI</a></h3>
-                    <p class="project-description">SCMI is an online system providing managers of self-service stores with the ability to monitor and control the temperature and states of fridges and other components in the store. </p>
-                    <div class="project-skills flex">
-                        <img class="skill-icon" src="icons/html-projects.svg" alt="HTML">
-                        <img class="skill-icon" src="icons/css-projects.svg" alt="CSS">
-                        <img class="skill-icon" src="icons/js-projects.svg" alt="JavaScript">
-                        <img class="skill-icon" src="icons/php-projects.svg" alt="PHP">
-                        <img class="skill-icon" src="icons/mysql-projects.svg" alt="MySQL">
+                
+                <p>November 2024 - January 2025</p>
+              </div>
+              <p class="employment-description">
+                Built and updated UI components and features for the products front end. Collaborated with the designer to achieve pixel perfect accessible designs.
+              </p>
+              <div class="employment-skills flex">
+                <div class="skill-container">
+                  <img class="skill-icon" src="icons/reactjs-projects.svg" alt="ReactJS">
+                  <span class="tooltip" data-color="light">ReactJS</span>
+                </div>
+                <div class="skill-container">
+                  <img class="skill-icon" src="icons/typescript-projects.svg" alt="TypeScript">
+                  <span class="tooltip" data-color="light">TypeScript</span>
+                </div>
+                <div class="skill-container">
+                  <img class="skill-icon" src="icons/tailwind-projects.svg" alt="TailwindCSS">
+                  <span class="tooltip" data-color="light">TailwindCSS</span>
+                </div>
+                <div class="skill-container">
+                  <img class="skill-icon" src="icons/storybook-projects.svg" alt="StorybookJS">
+                  <span class="tooltip" data-color="light">StorybookJS</span>
+                </div>
+              </div>
+            </div>
+            <div class="employment flow-content">
+              <div class="employment-header flow-content" style="--flow: 4px;">
+                <div 
+                  class="flex flex-row items-end"
+                  style="--gap: 8px;"
+                >
+                  <h3>Full Stack Developer</h3>
+                  <p><a class="link" href="https://www.facebook.com/motusmexico" rel="no-referrer" target="_blank">Motus</a></p>
+                </div>
+                
+                <p>June 2018 - June 2020</p>
+              </div>
+              <p class="employment-description">
+                Developed two customer-facing full stack web applications by planning out and executing the development of the user client, API, CMS, and backend for each project. Maintained and updated legacy projects by refactoring and creating documentation for the existing codebase.
+              </p>
+              <div class="employment-skills flex">
+                <div class="skill-container">
+                  <img class="skill-icon" src="icons/js-projects.svg" alt="JavaScript">
+                  <span class="tooltip" data-color="light">JavaScript</span>
+                </div>
+                <div class="skill-container">
+                  <img class="skill-icon" src="icons/php-projects.svg" alt="PHP">
+                  <span class="tooltip" data-color="light">PHP</span>
+                </div>
+                <div class="skill-container">
+                  <img class="skill-icon" src="icons/mysql-projects.svg" alt="MySQL">
+                  <span class="tooltip" data-color="light">MySQL</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" data-section="projects-tab" class="projects">
+      <div class="projects-section flow-content">
+          <h1 class="projects-header-decoration">Projects</h1>
+            <div class="projects-content">
+              <div class="project flow-content">
+                <h3 class="project-name"><a class="link" href="./ticketdex.html">Ticketdex</a></h3>
+                <p class="project-description">IOS app built in React Native Expo. Ticketdex is a virtual wallet that allows you to store your tickets for shows and events directly on your phone and keep them organized.</p>
+                <div class="project-skills flex">
+                    <div class="skill-container">
+                      <img class="skill-icon" src="icons/expo.svg" alt="Expo">
+                      <span class="tooltip" data-color="dark">Expo</span>
+                    </div>
+                    <div class="skill-container">
+                      <img class="skill-icon" src="icons/reactjs.svg" alt="ReactJS">
+                      <span class="tooltip" data-color="dark">ReactJS</span>
+                    </div>
+                    <div class="skill-container">
+                      <img class="skill-icon" src="icons/typescript.svg" alt="TypeScript">
+                      <span class="tooltip" data-color="dark">TypeScript</span>
+                    </div>
+                    <div class="skill-container">
+                      <img class="skill-icon" src="icons/sqlite.svg" alt="SQLite">
+                      <span class="tooltip" data-color="dark">SQLite</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+              <div class="project flow-content">
+                  <h3 class="project-name"><a class="link" href="./restofacil.html">Resto Fácil</a></h3>
+                  <p class="project-description">Restofácil is an online system providing service industry businesses and staff with an easy and fast way of managing tables, orders, customers, and payments. </p>
+                  <div class="project-skills flex">
+                    <div class="skill-container">
+                      <img class="skill-icon" src="icons/js.svg" alt="JavaScript">
+                      <span class="tooltip" data-color="dark">JavaScript</span>
+                    </div>
+                    <div class="skill-container">
+                      <img class="skill-icon" src="icons/php.svg" alt="PHP">
+                      <span class="tooltip" data-color="dark">PHP</span>
+                    </div>
+                    <div class="skill-container">
+                      <img class="skill-icon" src="icons/mysql.svg" alt="MySQL">
+                      <span class="tooltip" data-color="dark">MySQL</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="project flow-content">
+                  <h3 class="project-name"><a class="link" href="./scmi.html">SCMI</a></h3>
+                  <p class="project-description">SCMI is an online system providing managers of self-service stores with the ability to monitor and control the temperature and states of fridges and other components in the store. </p>
+                  <div class="project-skills flex">
+                    <div class="skill-container">
+                      <img class="skill-icon" src="icons/js.svg" alt="JavaScript">
+                      <span class="tooltip" data-color="dark">JavaScript</span>
+                    </div>
+                    <div class="skill-container">
+                      <img class="skill-icon" src="icons/php.svg" alt="PHP">
+                      <span class="tooltip" data-color="dark">PHP</span>
+                    </div>
+                    <div class="skill-container">
+                      <img class="skill-icon" src="icons/mysql.svg" alt="MySQL">
+                      <span class="tooltip" data-color="dark">MySQL</span>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
     <footer>
-        <hr style="--color: #666666;">
-        <div class="links flow-content" style="color: black;">
-            <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank">LinkedIn</a>
-            <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank">Github</a>
-            <a class="link" href="./assets/Roberto Cardenas Resume.pdf" target="_blank">Resume</a>
-            <p>Roberto Cardenas 2024</p>
+        <div class="footer-container">
+          <hr style="--color: #666666;">
+          <div class="links flow-content">
+              <a class="link" href="https://www.linkedin.com/in/roberto-cardenas-2a3642236/" target="_blank">LinkedIn</a>
+              <a class="link" href="https://github.com/Roberto-Cardenas" target="_blank">Github</a>
+              <a class="link" href="./assets/Roberto Cardenas Resume.pdf" target="_blank">Resume</a>
+              <p>Roberto Cardenas 2024</p>
+          </div>
         </div>
-        
     </footer>
 </body>
 </html>
