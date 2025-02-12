@@ -2,7 +2,7 @@
 :root {
   /* Colors */
   --clr-dark-900: black;
-  --clr-dark-700: #2F2F2F;
+  --clr-dark-700: #2f2f2f;
   --clr-dark-400: #505050;
   --clr-light-100: #fff;
   /* Font Weight */
@@ -68,6 +68,10 @@ header,
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .flex-row {
@@ -267,7 +271,7 @@ header {
   position: absolute;
   top: 50%;
   left: 4rem;
-  background-color: #CFCACA;
+  background-color: #cfcaca;
   width: calc(100% - 4rem);
   height: 1px;
 }
